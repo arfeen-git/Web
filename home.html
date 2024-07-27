@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/home2.css">
+    <title>Antique World</title>
+</head>
+
+<body>
+    <nav id="nav">
+        <ul>
+            <li><button id="menu-button">&#9776;</button></li>
+            <li class="item" id="items"><a href="/home.html">Home</a></li>
+            <li class="item" id="items"><a href="/about.html">About</a></li>
+            <li class="item" id="items"><a href="/services.html">Services</a></li>
+            <li class="item" id="items"><a href="/contact.html">Contact</a></li>
+            <li class="btn-search" id="items"><input type="text" placeholder="Search here"></li>
+
+        </ul>
+    </nav>
+
+    <div>
+        <header>
+            <h1><strong>Welcome to Antique World</strong></h1>
+        </header>
+    </div>
+    <div id="menu" class="hidden">
+        <ul>
+            <li><a href="/home.html">Coins</a></li>
+            <!-- home.html=coins posts folder -->
+            <li><a href="./Bposts/BankNotes.html">BankNotes</a></li>
+
+            <li><a href="./Aposts/Antiques.html">Antiques</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="box" id="box1">
+            <a href="./CPosts/libertycoin1906.html">
+                <img src="./Pics/libertycoin1906.png" alt="404-Not-Found" class="image">
+                <p>The Dawn of Freedom: </p>
+                <p>Liberty's Elegance in 1906</p>
+            </a>
+        </div>
+
+        <div class="box" id="box2">
+            <a href="./CPosts/morgan1878.html">
+                <img src="./Pics/morgan1.png" alt="404-Not-Found" class="image">
+                <p>The Morgan Silver Dollar: </p>
+                <p> A Symbol of American Greatness</p>
+
+            </a>
+        </div>
+
+        <div class="box" id="box3">
+            <a href="./CPosts/onetroy.html">
+                <img src="./Pics/troy.jpeg" alt="404-Not-Found" class="image">
+                <p>USA Troy:</p>
+                <p>One Troy Ounce - Limited Time Sale!</p>
+            </a>
+        </div>
+
+        <div class="box" id="box4">
+            <a href="./CPosts/libertycoin1794.html">
+                <img src="./Pics/liberty_17941.png" alt="404-Not-Found" class="image">
+                <p>The Birth of Freedom:</p>
+                <p>Liberty's Inaugural Emblem of 1794</p>
+            </a>
+        </div>
+
+        <div class="box" id="box5">
+            <a href="./CPosts/trade$1873.html">
+                <img src="./Pics/trade$1.png" alt="404-Not-Found" class="image">
+                <p> A Journey Through Time:</p>
+                <p> The Majesty of the Vintage Trade Dollar</p>
+            </a>
+        </div>
+
+        <div class="box" id="box6">
+            <a href="./CPosts/liberty1801.html">
+                <img src="./Pics/liberty18011.png" alt="404-Not-Found" class="image">
+                <p> Resplendent Freedom: </p>
+                <p> The Legacy of the 1801 Liberty Coin</p>
+            </a>
+        </div>
+        <div class="box" id="box7">
+            <a href="./CPosts/indianheade1905.html">
+                <img src="./Pics/indianhead19052.png" alt="404-Not-Found" class="image">
+                <p> 1905 Indian Head Penny -</p>
+                <p> Own a Piece of American History</p>
+            </a>
+        </div>
+       
+        <script>
+            document.getElementById('menu-button').addEventListener('click', function () {
+                document.getElementById('menu').classList.toggle('hidden')
+            })  
+        </script>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Badds.css">
+    <link rel="stylesheet" href="../CSS/home2.css">
+    
+    <title>Antique World</title>
+</head>
+
+<body>
+    <nav id="nav">
+        <ul>
+            <li><button id="menu-button">&#9776;</button></li>
+            <li class="item" id="items"><a href="/home.html">Home</a></li>
+            <li class="item" id="items"><a href="/about.html">About</a></li>
+            <li class="item" id="items"><a href="/services.html">Services</a></li>
+            <li class="item" id="items"><a href="/contact.html">Contact</a></li>
+            <li class="btn-search" id="items"><input type="text" placeholder="Search here"></li>
+
+        </ul>
+    </nav>
+
+    <div>
+        <header>
+            <h1><strong>Welcome to Antique World</strong></h1>
+        </header>
+    </div>
+    <div id="menu" class="hidden">
+        <ul>
+            <li><a href="/home.html">Coins</a></li>
+            <!-- home.html=coins posts folder -->
+            <li><a href="/Bposts/BankNotes.html">BankNotes</a></li>
+            
+            <li><a href="../Aposts/Antiques.html">Antiques</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="box" id="box1">
+            <a href="">
+                <img src="./Pics/download (1).jpg" alt="404-Not-Found" class="image">
+                <p></p>
+                <p></p>
+            </a>
+        </div>
+
+        <div class="box" id="box2">
+            <a href="./templateB.html">
+                <img src="download.jpeg" alt="404-Not-Found" class="image">
+                <p>Vintage King George VI Era Coin:</p>
+                <p> Authentic British Empire Relic</p>
+
+            </a>
+        </div>
+
+        <div class="box" id="box3">
+            <a href="">
+                <img src="./Pics/download.jpg" alt="404-Not-Found" class="image">
+                <p>Pakistan</p>
+                <p>most rare Markhor coin</p>
+            </a>
+        </div>
+
+
+        <script>
+            document.getElementById('menu-button').addEventListener('click', function () {
+                document.getElementById('menu').classList.toggle('hidden')
+            })  
+        </script>
+
+    </div>
+</body>
+
+</html>

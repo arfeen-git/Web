@@ -1,0 +1,334 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+body{
+    background-color: #a054548a;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../Pics/derrick-treadwell-vvAtwDoGZxA-unsplash.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+
+#nav {
+    width: 100%;
+    z-index: 1000;
+    background-color: #1E272E;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    
+}
+
+#nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background-color: #1E272E;
+}
+
+#nav ul li {
+    margin: 23px;
+    list-style: none;
+}
+
+#nav ul li a {
+    color: #fff;
+    padding: 15px 25px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+#nav ul li a:hover {
+    background-color: #3E4E59;
+}
+
+.btn-search input {
+    border-radius: 20px !important;
+    padding: 10px 15px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.btn-search {
+    float: left;
+    position: sticky;
+
+    border-radius: 20px !important;
+}
+
+.btn button {
+    color: black;
+    background-color: white;
+    background-color: lightgrey;
+    border-radius: 350px;
+}
+
+.btn-search input {
+
+    border-radius: 20px !important;
+}
+
+ul li:before {
+
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+
+.h1-Contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.h1-Contact h1 {
+    color: #ba4269;
+}
+
+.h1-Contact p {
+    color: aliceblue;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 18px;
+}
+
+.inputs input {
+
+    padding: 14px;
+    border-radius: 12px;
+    margin: 4px;
+    color: black;
+}
+
+.btn {
+    margin: 1rem;
+}
+
+.btn-search input {
+    padding: 10px 15px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.btn div h1 {
+    color: #ba4269;
+}
+
+.btn button {
+    height: 100%;
+    width: 100px;
+    padding: 13px;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: xxx-large;
+    font-weight: bold;
+    padding: 25px;
+}
+
+.social-icons i {
+    margin: 80px;
+}
+
+.social-icons i {
+    list-style: none;
+    cursor: pointer;
+    font-style: none;
+    color: #040000;
+}
+
+.social-icons i a {
+
+    display: flex;
+    font-style: none;
+    color: #c5c507;
+    font-size: large;
+    justify-content: center;
+}
+
+.fa-youtube:before {
+    color: brown;
+    font-size: 39px;
+    padding: 48px;
+    box-shadow: aquamarine 9px 0px 211px 12px;
+    border: 8px solid black;
+    border-radius: 180px;
+}
+
+.fa-facebook:before {
+    font-size: 39px;
+    padding: 48px;
+
+    color: midnightblue;
+    box-shadow: aquamarine 9px 0px 211px 12px;
+    border: 8px solid black;
+}
+
+.fa-facebook::before {
+    content: "";
+    border: 3px solid black;
+    content: "\f09a";
+    box-shadow: skyblue 0px 0px 264px 0px inset;
+    border-radius: 180px;
+
+}
+
+.fa-instagram:before {
+    font-size: 39px;
+    color: #81bcf0;
+    padding: 48px;
+
+    content: "\f09a";
+    box-shadow: inset red 0px 0px 151px 0px;
+    border-radius: 180px;
+
+}
+
+#describe-problem {
+    height: 111px;
+    width: 349px;
+    box-shadow: inset #aa8ec5 12px 55px 232px 12px;
+
+}
+
+button {
+    color: white;
+    padding: 14px;
+    border-radius: 37px;
+    background-color: #93748d;
+}
+
+@media(min-width:200px) and (max-width :970px) {
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    #nav {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0px;
+        justify-content: center;
+        width: 100%;
+        position: relative;
+    }
+
+    #nav ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #nav ul li {
+        margin: 13px;
+        list-style: none;
+        justify-content: center;
+    }
+
+    #nav ul li a {
+        padding: 10px 20px;
+    }
+
+ 
+
+    #describe-problem {
+        height: 111px;
+        width: 349px;
+
+    }
+
+    .h1-Contact p {
+        color: aliceblue;
+        font-size: medium;
+    }
+
+    .btn-search input[type=text] {
+        width: 120px;
+    }
+
+    .social-icons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+}
+
+@media(min-width:50px) and (max-width :380px) {
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    #nav {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0px;
+        justify-content: center;
+        width: 120%;
+        position: relative;
+    }
+
+    #nav ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #nav ul li {
+        margin: 13px;
+        list-style: none;
+        justify-content: center;
+    }
+
+    .btn-search input[type=text] {
+        width: 120px;
+    }
+
+    #nav ul li a {
+        padding: 10px 20px;
+    }
+
+  
+
+    #describe-problem {
+        height: 111px;
+        width: 249px;
+
+    }
+
+    .h1-Contact p {
+        color: aliceblue;
+        font-size: medium;
+    }
+
+    .social-icons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+}

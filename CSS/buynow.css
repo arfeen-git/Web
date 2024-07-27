@@ -1,0 +1,581 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#nav {
+  width: 100%;
+  z-index: 1000;
+  background-color: #1E272E;
+  /* Dark blue-gray */
+  position: sticky;
+  top: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  /* Soft shadow */
+}
+
+#nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  background-color: #1E272E;
+  /* Dark blue-gray */
+}
+
+#nav ul li {
+  margin: 23px;
+  list-style: none;
+}
+
+#nav ul li a {
+  color: #fff;
+  /* White text color */
+  padding: 15px 25px;
+  /* Adjusted padding */
+  border-radius: 8px;
+  /* Rounded corners */
+  transition: background-color 0.3s ease;
+  /* Smooth transition */
+}
+
+#nav ul li a:hover {
+  background-color: #3E4E59;
+  /* Darker blue-gray on hover */
+}
+
+.btn-search input {
+  border-radius: 20px !important;
+  padding: 10px 15px;
+  /* Adjusted padding */
+  background-color: #fff;
+  /* White background color */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  /* Soft shadow */
+}
+
+.btn-search {
+  float: left;
+  position: sticky;
+  border-radius: 20px !important;
+}
+
+.p-method h1 {
+  position: relative;
+  top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.payment img {
+  mix-blend-mode: multiply;
+  filter: contrast(1);
+
+}
+
+.ep img {
+  position: relative;
+  left: 120px;
+  bottom: 16px;
+}
+
+.ep {
+  bottom: -2rem;
+  height: 450%;
+  position: relative;
+  width: 25%;
+  background-color: green;
+
+}
+
+.SB img {
+  position: relative;
+  left: 120px;
+  bottom: 16px;
+}
+
+.SB {
+  bottom: -2rem;
+  height: 450%;
+  position: relative;
+  width: 25%;
+  background-color: orange;
+
+}
+
+.HB img {
+  position: relative;
+  left: 120px;
+  bottom: 16px;
+}
+
+.HB {
+  height: 450%;
+  width: 25%;
+  background-color: #155924d6;
+
+
+}
+
+.HB {
+  position: relative;
+  bottom: -2rem;
+  left: 0rem;
+}
+
+.payment {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.ep,
+.SB,
+.HB {
+  margin: 20px;
+}
+
+.ep img,
+.SB img,
+.HB img {
+  width: 100px;
+}
+
+.container {
+  width: 60%;
+  height: auto;
+  max-width: 600px;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.form-select {
+  margin: 14px 0;
+  height: 44px;
+  width: 100%;
+  border: 2px solid black;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.form-select:hover {
+  border-color: #323b41;
+}
+
+.container>div {
+  margin-bottom: 20px;
+}
+
+.container input {
+  height: 44px;
+  width: 169px;
+  border: 2px solid black;
+  padding: 18px 10px 5px 10px;
+  /* Adjusted padding */
+  border-radius: 10px;
+  margin: 4px;
+  transition: all 0.3s ease;
+  /* Apply transition to all properties */
+}
+
+.container input::placeholder {
+  transition: all 0.3s ease;
+  /* Apply transition to placeholder */
+}
+
+.container input:hover {
+  border-color: #3E4E59;
+  transform: scale(0.9) translateY(-8px);
+}
+
+.container input:hover::placeholder {
+  transform: translateY(-24px);
+}
+
+.container h2 {
+  border: 1px solid black;
+  height: 60px;
+}
+
+.chk-out {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#sendButton {
+  background: green;
+  position: relative;
+  left: 176px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 30px;
+  padding: 20px;
+  transition: border-color 0.3s
+}
+
+#sendButton:hover {
+  border-color: 1px solid #3E4E59;
+}
+
+
+
+
+
+/* input[type="file"] {
+  display: none;
+}
+
+
+.label-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.custom-input-button {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+.file-name {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+
+.image-preview {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+  display: none;
+}
+
+
+.remove-image {
+  cursor: pointer;
+  color: #f00;
+  margin-left: 10px;
+}
+label{
+  display: flex;
+} */
+@media(min-width:900px) and (max-width :1250px) {
+  * {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  #nav {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+  }
+
+  #nav ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #nav ul li {
+    margin: 13px;
+    list-style: none;
+    justify-content: center;
+  }
+
+  #nav ul li a {
+    padding: 10px 20px;
+  }
+}
+
+@media(min-width:650px) and (max-width :900px) {
+  * {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  #nav {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+  }
+
+  #nav ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #nav ul li {
+    margin: 13px;
+    list-style: none;
+    justify-content: center;
+  }
+
+  #nav ul li a {
+    padding: 10px 20px;
+  }
+
+  .ep,
+  .SB,
+  .HB {
+    width: 40%;
+  }
+}
+
+@media(min-width:490px) and (max-width :650px) {
+  * {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  #nav {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+  }
+
+  #nav ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #nav ul li {
+    margin: 13px;
+    list-style: none;
+    justify-content: center;
+  }
+
+  #nav ul li a {
+    padding: 10px 20px;
+  }
+
+  .ep,
+  .SB,
+  .HB {
+    width: 50%;
+  }
+}
+
+@media(min-width:380px) and (max-width :490px) {
+  * {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  #nav {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+  }
+
+  #nav ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #nav ul li {
+    margin: 13px;
+    list-style: none;
+    justify-content: center;
+  }
+
+  #nav ul li a {
+    padding: 10px 20px;
+  }
+
+  .ep,
+  .SB,
+  .HB {
+    width: 60%;
+  }
+
+  button#sendButton {
+    background: green;
+    position: relative;
+    left: 152px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 30px;
+    padding: 20px;
+    transition: border-color 0.3s;
+  }
+}
+
+@media(min-width:330px) and (max-width :380px) {
+  * {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  #nav {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+  }
+
+  #nav ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #nav ul li {
+    margin: 13px;
+    list-style: none;
+    justify-content: center;
+  }
+
+  #nav ul li a {
+    padding: 10px 20px;
+  }
+
+  .ep,
+  .SB,
+  .HB {
+    width: 65%;
+  }
+
+  button#sendButton {
+    background: green;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    left: 0px;
+    display: flex;
+    border-radius: 30px;
+    padding: 20px;
+    transition: border-color 0.3s
+  }
+}
+
+@media(min-width:295px) and (max-width :330px) {
+  * {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  #nav {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+  }
+
+  #nav ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #nav ul li {
+    margin: 13px;
+    list-style: none;
+    justify-content: center;
+  }
+
+  #nav ul li a {
+    padding: 10px 20px;
+  }
+
+  .ep,
+  .SB,
+  .HB {
+    width: 75%;
+  }
+
+  button#sendButton {
+    background: green;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    left: 0px;
+    display: flex;
+    border-radius: 30px;
+    padding: 20px;
+    transition: border-color 0.3s
+  }
+}
+
+@media(min-width:50px) and (max-width :295px) {
+  * {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  #nav {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+  }
+
+  #nav ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #nav ul li {
+    margin: 13px;
+    list-style: none;
+    justify-content: center;
+  }
+
+  #nav ul li a {
+    padding: 10px 20px;
+  }
+
+  .ep,
+  .SB,
+  .HB {
+    width: 90%;
+  }
+
+  button#sendButton {
+    background: green;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    left: 0px;
+    display: flex;
+    border-radius: 30px;
+    padding: 20px;
+    transition: border-color 0.3s
+  }
+}

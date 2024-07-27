@@ -1,0 +1,858 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#nav {
+    width: 100%;
+    z-index: 1000;
+    background-color: #1E272E;
+    /* Dark blue-gray */
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    /* Soft shadow */
+}
+
+#nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background-color: #1E272E;
+    /* Dark blue-gray */
+}
+
+#nav ul li {
+    margin: 23px;
+    list-style: none;
+}
+
+#nav ul li a {
+    color: #fff;
+    /* White text color */
+    padding: 15px 25px;
+    /* Adjusted padding */
+    border-radius: 8px;
+    /* Rounded corners */
+    transition: background-color 0.3s ease;
+    /* Smooth transition */
+}
+
+#nav ul li a:hover {
+    background-color: #3E4E59;
+    /* Darker blue-gray on hover */
+}
+
+.btn-search input {
+    border-radius: 20px !important;
+    padding: 10px 15px;
+    /* Adjusted padding */
+    background-color: #fff;
+    /* White background color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    /* Soft shadow */
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.specs {
+    bottom: 433px;
+    position: relative;
+    left: 455px;
+    width: 390px;
+}
+.image {
+    mix-blend-mode: multiply;
+    filter: contrast(1);
+}
+.specs h1 {
+
+    background-color: rgb(13, 14, 14);
+    width: 255px;
+    color: white;
+}
+
+.specs h2 {
+    margin: 1px 11px 22px 28px;
+    background-color: rgb(13, 14, 14);
+    width: 331px;
+    color: white;
+}
+
+.strong_specs {
+    font-size: larger;
+    margin: 5px 5px 5px 5px;
+    background-color: bisque;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.spec {
+    padding: 10px 13px;
+    text-align: center;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 3rem;
+}
+
+.buy-now-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 47px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    position: absolute;
+    right: 520px;
+    bottom: 212px;
+
+}
+
+.buy-now-btn1 {
+    padding: 10px 13px;
+    text-align: center;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 3rem;
+    position: absolute;
+    right: 538px;
+    bottom: 300px;
+
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.coin-pictures img {
+    height: 40%;
+}
+
+div.coin-pictures {
+    height: 720px;
+}
+
+@media(min-width : 930px) and (max-width : 1457px) {
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .coin-pictures img {
+        height: 24%;
+    }
+
+    div.coin-pictures {
+        height: 720px;
+    }
+
+    .specs {
+        bottom: 380px;
+        position: relative;
+        left: 455px;
+        width: 390px;
+    }
+
+    #menu {
+        display: none;
+        position: fixed;
+        height: 100%;
+        width: 50%;
+        top: 15%;
+        left: 0;
+        background-color: #3E4E59;
+        z-index: 40;
+        padding-top: 50px;
+        box-sizing: border-box;
+    }
+
+    nav li button {
+        padding: 2px;
+        transition: background-color 0.4s ease;
+    }
+
+    nav li button:hover {
+        background-color: bisque;
+    }
+
+    .buy-now-btn1 {
+        padding: 10px 13px;
+        text-align: center;
+        font-size: 15px;
+        cursor: pointer;
+        border-radius: 3rem;
+        position: absolute;
+        right: 538px;
+        bottom: 219px;
+
+    }
+
+    .buy-now-btn {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px 47px;
+        text-align: center;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 8px;
+        position: absolute;
+        right: 520px;
+        bottom: 142px;
+
+    }
+}
+
+@media (min-width: 454px) and (max-width: 930px) {
+    #nav {
+        width: 100%;
+        z-index: 1000;
+        background-color: #1E272E;
+        /* Dark blue-gray */
+        position: relative;
+
+        top: 0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        /* Soft shadow */
+    }
+
+    #nav ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        background-color: #1E272E;
+        /* Dark blue-gray */
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #nav ul li {
+        margin: 10px;
+        list-style: none;
+    }
+
+    #nav ul li a {
+        color: #fff;
+        /* White text color */
+        padding: 15px 25px;
+        /* Adjusted padding */
+        border-radius: 8px;
+        /* Rounded corners */
+        transition: background-color 0.3s ease;
+        /* Smooth transition */
+    }
+
+    #nav ul li a:hover {
+        background-color: #3E4E59;
+        /* Darker blue-gray on hover */
+    }
+
+    .btn-search input {
+        width: 70%;
+        border-radius: 20px !important;
+        padding: 11px 0px;
+        /* Adjusted padding */
+        background-color: #fff;
+        /* White background color */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        /* Soft shadow */
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .description {
+        padding: 20px;
+    }
+
+    .buy-now-btn,
+    .buy-now-btn1 {
+        width: calc(100% - 40px);
+        margin: 10px 20px;
+        padding: 15px;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .spec {
+        padding: 10px;
+        margin: 10px;
+        text-align: center;
+    }
+
+    .strong_specs {
+        font-size: 14px;
+        padding: 8px;
+        text-align: center;
+    }
+
+    .specs {
+        left: 4rem;
+        bottom: -167px;
+        position: relative;
+        width: 85%;
+        padding: 0px;
+    }
+
+    #specs h2 {
+        margin: 20px 20rem 22px 28px;
+        background-color: rgb(13, 14, 14);
+        width: 331px;
+        color: white;
+    }
+
+    .coin-pictures img {
+        width: auto;
+        height: 60%;
+    }
+
+    .buy-now-btn {
+        bottom: 11px;
+        right: 20px;
+        position: relative;
+    }
+
+    .buy-now-btn1 {
+        bottom: 80px;
+        right: 20px;
+        position: sticky;
+    }
+
+    .description h1 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .description p {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 378px) and (max-width: 454px) {
+    #nav {
+
+        z-index: 1000;
+        background-color: #1E272E;
+        /* Dark blue-gray */
+        position: relative;
+
+        top: 0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        /* Soft shadow */
+    }
+
+    #nav ul {
+        width: 120%;
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        background-color: #1E272E;
+        /* Dark blue-gray */
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #nav ul li {
+
+        margin: 10px;
+        list-style: none;
+    }
+
+    #nav ul li a {
+        width: 120%;
+        color: #fff;
+        /* White text color */
+        padding: 15px 25px;
+        /* Adjusted padding */
+        border-radius: 8px;
+        /* Rounded corners */
+        transition: background-color 0.3s ease;
+        /* Smooth transition */
+    }
+
+    #nav ul li a:hover {
+        background-color: #3E4E59;
+        /* Darker blue-gray on hover */
+    }
+
+    .btn-search input {
+        width: 70%;
+        border-radius: 20px !important;
+        padding: 11px 0px;
+        /* Adjusted padding */
+        background-color: #fff;
+        /* White background color */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        /* Soft shadow */
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .description {
+        padding: 20px;
+    }
+
+    .buy-now-btn,
+    .buy-now-btn1 {
+        width: calc(100% - 40px);
+        margin: 10px 20px;
+        padding: 15px;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .spec {
+        padding: 10px;
+        margin: 10px;
+        text-align: center;
+    }
+
+    .strong_specs {
+        font-size: 14px;
+        padding: 8px;
+        text-align: center;
+    }
+
+    .specs {
+        left: 4rem;
+        bottom: -167px;
+        position: relative;
+        width: 85%;
+        padding: 0px;
+    }
+
+    #specs h2 {
+        margin: 20px 20rem 22px 28px;
+        background-color: rgb(13, 14, 14);
+        width: 331px;
+        color: white;
+    }
+
+    .coin-pictures img {
+        width: auto;
+        height: 60%;
+    }
+
+    .buy-now-btn {
+        bottom: 11px;
+        right: 20px;
+        position: relative;
+    }
+
+    .buy-now-btn1 {
+        bottom: 80px;
+        right: 20px;
+        position: sticky;
+    }
+
+    .description h1 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .description p {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 325px) and (max-width: 378px) {
+    #nav {
+
+        z-index: 1000;
+        background-color: #1E272E;
+        /* Dark blue-gray */
+        position: relative;
+
+        top: 0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        /* Soft shadow */
+    }
+
+    #nav ul {
+        width: 140%;
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        background-color: #1E272E;
+        /* Dark blue-gray */
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #nav ul li {
+
+        margin: 10px;
+        list-style: none;
+    }
+
+    #nav ul li a {
+        width: 140%;
+        color: #fff;
+        /* White text color */
+        padding: 15px 25px;
+        /* Adjusted padding */
+        border-radius: 8px;
+        /* Rounded corners */
+        transition: background-color 0.3s ease;
+        /* Smooth transition */
+    }
+
+    #nav ul li a:hover {
+        background-color: #3E4E59;
+        /* Darker blue-gray on hover */
+    }
+
+    .btn-search input {
+        width: 70%;
+        border-radius: 20px !important;
+        padding: 11px 0px;
+        /* Adjusted padding */
+        background-color: #fff;
+        /* White background color */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        /* Soft shadow */
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .description {
+        padding: 20px;
+    }
+
+    .buy-now-btn,
+    .buy-now-btn1 {
+        width: calc(100% - 40px);
+        margin: 10px 20px;
+        padding: 15px;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .spec {
+        padding: 10px;
+        margin: 10px;
+        text-align: center;
+    }
+
+    .strong_specs {
+        font-size: 14px;
+        padding: 8px;
+        text-align: center;
+    }
+
+    .specs {
+        left: 4rem;
+        bottom: -167px;
+        position: relative;
+        width: 85%;
+        padding: 0px;
+    }
+
+    #specs h2 {
+        margin: 20px 20rem 22px 28px;
+        background-color: rgb(13, 14, 14);
+        width: 331px;
+        color: white;
+    }
+
+    .coin-pictures img {
+        width: auto;
+        height: 60%;
+    }
+
+    .buy-now-btn {
+        bottom: 11px;
+        right: 20px;
+        position: relative;
+    }
+
+    .buy-now-btn1 {
+        bottom: 80px;
+        right: 20px;
+        position: sticky;
+    }
+
+    .description h1 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .description p {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 302px) and (max-width: 325px) {
+    #nav {
+
+        z-index: 1000;
+        background-color: #1E272E;
+        /* Dark blue-gray */
+        position: relative;
+
+        top: 0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        /* Soft shadow */
+    }
+
+    #nav ul {
+        width: 150%;
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        background-color: #1E272E;
+        /* Dark blue-gray */
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #nav ul li {
+
+        margin: 10px;
+        list-style: none;
+    }
+
+    #nav ul li a {
+        width: 150%;
+        color: #fff;
+        /* White text color */
+        padding: 15px 25px;
+        /* Adjusted padding */
+        border-radius: 8px;
+        /* Rounded corners */
+        transition: background-color 0.3s ease;
+        /* Smooth transition */
+    }
+
+    #nav ul li a:hover {
+        background-color: #3E4E59;
+        /* Darker blue-gray on hover */
+    }
+
+    .btn-search input {
+        width: 70%;
+        border-radius: 20px !important;
+        padding: 11px 0px;
+        /* Adjusted padding */
+        background-color: #fff;
+        /* White background color */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        /* Soft shadow */
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .description {
+        padding: 20px;
+    }
+
+    .buy-now-btn,
+    .buy-now-btn1 {
+        width: calc(100% - 40px);
+        margin: 10px 20px;
+        padding: 15px;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .spec {
+        padding: 10px;
+        margin: 10px;
+        text-align: center;
+    }
+
+    .strong_specs {
+        font-size: 14px;
+        padding: 8px;
+        text-align: center;
+    }
+
+    .specs {
+        left: 4rem;
+        bottom: -167px;
+        position: relative;
+        width: 85%;
+        padding: 0px;
+    }
+
+    #specs h2 {
+        margin: 20px 20rem 22px 28px;
+        background-color: rgb(13, 14, 14);
+        width: 331px;
+        color: white;
+    }
+
+    .coin-pictures img {
+        width: auto;
+        height: 60%;
+    }
+
+    .buy-now-btn {
+        bottom: 11px;
+        right: 20px;
+        position: relative;
+    }
+
+    .buy-now-btn1 {
+        bottom: 80px;
+        right: 20px;
+        position: sticky;
+    }
+
+    .description h1 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .description p {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 150px) and (max-width: 302px) {
+    #nav {
+
+        z-index: 1000;
+        background-color: #1E272E;
+        /* Dark blue-gray */
+        position: relative;
+
+        top: 0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        /* Soft shadow */
+    }
+
+    #nav ul {
+        width: 180%;
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        background-color: #1E272E;
+        /* Dark blue-gray */
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #nav ul li {
+
+        margin: 10px;
+        list-style: none;
+    }
+
+    #nav ul li a {
+        width: 180%;
+        color: #fff;
+        /* White text color */
+        padding: 15px 25px;
+        /* Adjusted padding */
+        border-radius: 8px;
+        /* Rounded corners */
+        transition: background-color 0.3s ease;
+        /* Smooth transition */
+    }
+
+    #nav ul li a:hover {
+        background-color: #3E4E59;
+        /* Darker blue-gray on hover */
+    }
+
+    .btn-search input {
+        width: 70%;
+        border-radius: 20px !important;
+        padding: 11px 0px;
+        /* Adjusted padding */
+        background-color: #fff;
+        /* White background color */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        /* Soft shadow */
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .description {
+        padding: 20px;
+    }
+
+    .buy-now-btn,
+    .buy-now-btn1 {
+        width: calc(100% - 40px);
+        margin: 10px 20px;
+        padding: 15px;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .spec {
+        padding: 10px;
+        margin: 10px;
+        text-align: center;
+    }
+
+    .strong_specs {
+        font-size: 14px;
+        padding: 8px;
+        text-align: center;
+    }
+
+    .specs {
+        left: 4rem;
+        bottom: -167px;
+        position: relative;
+        width: 85%;
+        padding: 0px;
+    }
+
+    #specs h2 {
+        margin: 20px 20rem 22px 28px;
+        background-color: rgb(13, 14, 14);
+        width: 331px;
+        color: white;
+    }
+
+    .coin-pictures img {
+        width: auto;
+        height: 60%;
+    }
+
+    .buy-now-btn {
+        bottom: 11px;
+        right: 20px;
+        position: relative;
+    }
+
+    .buy-now-btn1 {
+        bottom: 80px;
+        right: 20px;
+        position: sticky;
+    }
+
+    .description h1 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .description p {
+        font-size: 16px;
+    }
+}
